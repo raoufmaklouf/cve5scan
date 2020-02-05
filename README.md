@@ -2,7 +2,11 @@
 ==========
 ### 5 CVE scan and exploit###
 # **Use** #
-`Installation : sudo chmod +x setup.sh`&& sudo ./setup.sh
+`Installation : sudo chmod +x setup.sh`
+
+               `sudo chmod +x cve5scan.sh`
+               
+               `./setup.sh`
 
 `Run: ./cve5scan.sh <domainlist.txt>`
 
