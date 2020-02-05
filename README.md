@@ -18,6 +18,8 @@ known security vulnerabilities listed with the source below
 
 If there is a result, it is stored in a output folder
 
+![alt text](https://raw.githubusercontent.com/raoufmaklouf/cve5scan/master/Screenshot%20at%202020-02-05%2013-40-55.jpg)
+
 ### CVE Supported ###
 --struts-pwn :`CVE-2017-5638`   source: https://github.com/mazen160/struts-pwn
 
