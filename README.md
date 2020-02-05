@@ -1,6 +1,10 @@
 *cve5scan*
 ==========
-### 5 CVE scan and exploit###
+### 5 CVE scan and exploit
+The mission of this program  the
+Scanning list of domain from 5
+known security vulnerabilities listed with the source below
+
 # **Use** #
 *Installation :* 
 
@@ -11,6 +15,8 @@
 `./setup.sh`
 
 `Run: ./cve5scan.sh <domainlist.txt>`
+
+If there is a result, it is stored in a output folder
 
 ### CVE Supported ###
 --struts-pwn :`CVE-2017-5638`   source: https://github.com/mazen160/struts-pwn
