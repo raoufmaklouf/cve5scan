@@ -16,7 +16,7 @@ $line
 $v1
 CVE-2017-5638
 --------------------------------------------------------------------------
-" >>  Vulnerable.txt 
+" >>  output/$line.txt 
 echo -e "\033[0;31m$v1\e[0m"
 else
 echo -e "\033[1;33m$v1\e[0m"
@@ -33,7 +33,7 @@ $line
 $v2
 CVE-2017-9805
 --------------------------------------------------------------------------
-" >> Vulnerable.txt
+" >> output/$line.txt
 echo -e "\033[0;31m$v2\e[0m"
 else
 echo -e "\033[1;33m$v2\e[0m"
@@ -49,7 +49,7 @@ $line
 $v3
 CVE-2018-11776
 --------------------------------------------------------------------------
-" >> Vulnerable.txt
+" >> output/$line.txt
 echo -e "\033[0;31m$v3\e[0m"
 else
 echo -e "\033[1;33m$v3\e[0m"
@@ -68,7 +68,7 @@ $line
 Poc Filename  http://$line/Poc.jsp
 CVE-2018-11776
 --------------------------------------------------------------------------
-" >> Vulnerable.txt
+" >> output/$line.txt
 echo -e "\033[0;31mStatus: Vulnerable! \e[0m"
 fi
 
@@ -86,7 +86,7 @@ $line
 Vulnerable!
 CVE-2018-7600
 --------------------------------------------------------------------------
-" >> Vulnerable.txt
+" >> output/$line.txt
 echo -e "\033[0;31mStatus: Vulnerable!\e[0m"
 fi
 done
