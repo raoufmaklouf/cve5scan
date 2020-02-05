@@ -8,7 +8,7 @@ echo "-------------$line-----------------------"
 
 #CVE-2017-5638
 echo 'CVE-2017-5638:'
-v1=$(python cve/struts-pwn-CVE-2017-5638/struts-pwn.py --check --url $line | grep 'Status:')
+v1=$(python cve/struts-pwn/struts-pwn.py --check --url $line | grep 'Status:')
 if [ "${v1}" != '[*] Status: Not Affected.' ] ;then
 echo "
 ------------Vulnerable!---------------------------------------------------
