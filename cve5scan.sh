@@ -75,7 +75,7 @@ fi
 
 #CVE-2018-7600
 echo 'CVE-2018-7600:'
-v5=$(ruby cve/Drupalgeddon2-CVE-2018-7600.rb https://$line 2>/dev/null  | grep "[+] Good News Everyone!" 
+v5=$(timeout --signal=SIGINT 8 ruby cve/Drupalgeddon2-CVE-2018-7600.rb https://$line 2>/dev/null  | grep "[+] Good News Everyone!" 
 )
 if [ -z "${v5}"  ] ;then
 echo -e "\033[1;33m[*] Status: Not Affected.\e[0m"
