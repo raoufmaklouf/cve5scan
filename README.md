@@ -57,5 +57,5 @@ read more: https://github.com/cyberheartmi9/CVE-2017-12617
 
 # **Author** #
 *raouf maklouf*
-* Faebook: [https://www.facebook.com/raouf.maklouf]
+* Facebook: [https://www.facebook.com/raouf.maklouf]
 * Linkedin: [https://www.linkedin.com/in/raouf-maklouf-505a061a0/]
