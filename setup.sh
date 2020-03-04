@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo chmod +x cve5scan.sh
+
 mkdir output
 cd cve
 git clone https://github.com/mazen160/struts-pwn.git
